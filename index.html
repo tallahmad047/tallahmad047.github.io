@@ -3,66 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Portfolio - El Hadji Ahmad Tall</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- En-tête -->
     <header>
+        
         <h1>Bienvenue sur mon Portfolio</h1>
-        <p>Je suis El Hadji Ahmad Tall, spécialisé en DevOps et Cloud.</p>
+        
     </header>
 
     <!-- Menu de navigation -->
     <nav>
         <ul>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="compètances.html">Compétences</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="parcours.html">Parcours</a></li>
         </ul>
     </nav>
-
-    <!-- Section Compétences -->
-    <section id="competences">
-        <h2>Compétences</h2>
-        <ul>
-            <li>Développement de microservices (Spring Boot, Docker, Kubernetes)</li>
-            <li>CI/CD (Jenkins, GitHub Actions)</li>
-            <li>Cloud (AWS, Azure, GCP)</li>
-            <li>Gestion de données (PostgreSQL, MongoDB)</li>
-        </ul>
-    </section>
-
-    <!-- Section Certifications -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Certification DevOps</li>
-            <li>Certification Cloud</li>
-            <!-- Ajoute d'autres certifications si besoin -->
-        </ul>
-    </section>
-
-    <!-- Section Projets -->
-    <section id="projets">
-        <h2>Projets</h2>
-        <div>
-            <h3>Déploiement e-commerce sur Kubernetes</h3>
-            <p>Développement et déploiement d'une plateforme e-commerce avec architecture microservices...</p>
+    <div class="container my-5">
+        <!-- Titre principal -->
+        <div class="text-center mb-5">
+            <img src="img.jpg" alt="Photo de El Hadji Ahmad Tall" class="profile-pic mb-3"> 
+            <h1>El Hadji Ahmad Tall</h1>
+            <p>Je m'appelle El Hadji Ahmad Tall, passionné par la technologie 
+                et expert en Business Intelligence, DevOps et développement backend avec Spring. 
+                
+                Mon parcours en ingénierie me permet de concevoir des solutions robustes, optimisées et 
+                innovantes pour répondre aux besoins des entreprises modernes.</p>
         </div>
-        <!-- Ajoute d'autres projets si besoin -->
-    </section>
+        
+        <!-- Contenu en colonnes -->
+        <div class="row">
+            <!-- Business Intelligence -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="p-3 border rounded">
+                    <h2 class="section-title">Business Intelligence</h2>
+                    <p class="section-content">
+                        Titulaire d'un master en BI, j’ai acquis une expertise dans l’analyse de données et la création de rapports dynamiques. Je contribue aux décisions stratégiques en optimisant la gestion des ressources grâce à des visualisations et calculs avancés.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- DevOps et Cloud -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="p-3 border rounded">
+                    <h2 class="section-title">DevOps et Cloud</h2>
+                    <p class="section-content">
+                        J’optimise les cycles de développement avec CI/CD, Kubernetes, Kafka et cloud (AWS, Azure, GCP), en assurant des environnements fiables. SonarQube pour l'analyse de code fait partie de mon expertise pour maintenir la qualité.
+                    </p>
+                </div>
+            </div>
 
-    <!-- Section Parcours -->
-    <section id="parcours">
-        <h2>Parcours</h2>
-        <p>Maîtrise en Business Intelligence, expériences en machine learning, DevOps, et gestion de projets Cloud.</p>
-    </section>
+            <!-- Développement avec Spring -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="p-3 border rounded">
+                    <h2 class="section-title">Développement avec Spring</h2>
+                    <p class="section-content">
+                        Spécialiste Spring, j’intègre Spring Boot, Spring Cloud et Kafka pour créer des architectures microservices performantes, sécurisées et asynchrones. SonarQube garantit la qualité de code dans mes solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lien vers le JavaScript de Bootstrap et jQuery pour les fonctionnalités interactives -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Script JS pour animation simple (si nécessaire) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Exemple d'animation pour faire apparaître les sections
+            const sections = document.querySelectorAll('.section-content');
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                setTimeout(() => {
+                    section.style.transition = "opacity 1s";
+                    section.style.opacity = 1;
+                }, 500);
+            });
+        });
+    </script>
+   
 
     <!-- Pied de page -->
     <footer>
-        <p>Contactez-moi : <a href="mailto:exemple@mail.com">exemple@mail.com</a></p>
+        Contactez-moi : 
+
+             <!-- Icônes de réseaux sociaux -->
+             <div class="social-icons">
+                <a href="https://github.com/VOTRE_COMPTE_GITHUB" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:VOTRE_ADRESSE_EMAIL" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/VOTRE_PROFIL_LINKEDIN" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/VOTRE_COMPTE_TWITTER" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/VOTRE_COMPTE_INSTAGRAM" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

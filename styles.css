@@ -52,9 +52,33 @@ section {
 footer {
     text-align: center;
     padding: 1rem;
-    background: #333;
+    background: #333; */
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+section-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.section-content {
+    color: #666;
+}
+ /* Style personnalisé pour centrer et espacer les sections */
+ .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #ffffff; /* Définit la couleur des icônes en blanc */
+}
+.social-icons a:hover {
+    color: #007bff; /* Change la couleur des icônes au survol */
 }
