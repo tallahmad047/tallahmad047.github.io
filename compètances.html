@@ -3,101 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Portfolio - El Hadji Ahmad Tall</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <!-- En-tête -->
-    <header>
-        <h1>Bienvenue sur mon Portfolio</h1>
-    </header>
-
-    <!-- Menu de navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="competences.html">Compétences</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="projets.html">Projets</a></li>
-            <li><a href="parcours.html">Parcours</a></li>
-        </ul>
+<body class="bg-gray-100">
+    <!-- Navigation reste identique -->
+       <!-- Navigation -->
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">El Hadji Ahmad Tall</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-300">Accueil</a></li>
+                <li><a href="compètances.html" class="hover:text-gray-300">Compétences</a></li>
+                <li><a href="certifications.html" class="hover:text-gray-300">Certifications</a></li>
+                <li><a href="projets.html" class="hover:text-gray-300">Projets</a></li>
+                <li><a href="parcours.html" class="hover:text-gray-300">Parcours</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <div class="container my-5">
-        <!-- Titre principal -->
-        <div class="text-center mb-5">
-            <img src="img.jpg" alt="Photo de El Hadji Ahmad Tall" class="profile-pic mb-3"> 
-            <h1>El Hadji Ahmad Tall</h1>
-            <p>Je m'appelle El Hadji Ahmad Tall, passionné par la technologie 
+
+    <!-- Section Héro -->
+    <section class="py-1 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <img src="img.jpg" alt="Photo de El Hadji Ahmad Tall" class="rounded-full mx-auto mb-6 w-32 h-32 object-cover">
+            <h1 class="text-4xl font-bold mb-3">El Hadji Ahmad Tall</h1>
+            <p class="max-w-2xl mx-auto px-4">
+                Je m'appelle El Hadji Ahmad Tall, passionné par la technologie 
                 et expert en Business Intelligence, DevOps et développement backend avec Spring. 
                 Mon parcours en ingénierie me permet de concevoir des solutions robustes, optimisées et 
-                innovantes pour répondre aux besoins des entreprises modernes.</p>
+                innovantes pour répondre aux besoins des entreprises modernes.
+            </p>
         </div>
-        
-        <!-- Contenu en colonnes -->
-        <div class="row">
-            <!-- Business Intelligence -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="p-3 border rounded">
-                    <h2 class="section-title">Compétences BI et Data Scientist</h2>
-                    <ul>
-                        <li>Power BI pour la création de rapports dynamiques</li>
-                        <li>Machine Learning avec Azure et Python (NLP)</li>
-                        <li>Analyse des réseaux sociaux</li>
-                        <li>Utilisation de SSIS et SSAS pour le traitement de données</li>
-                        <li>Visualisations avancées et analyses avec DAX</li>
-                    </ul>
-                </div>
-            </div>
+    </section>
+    
+    <!-- Section Compétences -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Mes Compétences</h2>
             
-            <!-- DevOps et Cloud -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="p-3 border rounded">
-                    <h2 class="section-title">Compétences DevOps et Cloud</h2>
-                    <ul>
-                        <li>Orchestration de conteneurs avec Kubernetes</li>
-                        <li>Infrastructure as Code (IaC) avec Terraform et Ansible</li>
-                        <li>Déploiement CI/CD avec Jenkins et Docker</li>
-                        <li>Monitoring et logs avec Datadog et ELK Stack</li>
-                        <li>Gestion des configurations avec Git et SonarQube</li>
-                        <li>Services AWS (EC2, S3, VPC, IAM, AWS lambda)</li>
-                    </ul>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- BI et Data Science -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-blue-600 p-4">
+                        <h3 class="text-xl font-bold text-white flex items-center">
+                            <i class="fas fa-chart-line mr-3"></i>
+                            BI et Data Science
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Power BI - Rapports dynamiques</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Machine Learning (Azure, Python, NLP)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Analyse des réseaux sociaux</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>SSIS et SSAS</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>DAX - Visualisations avancées</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>SQL Server</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- DevOps et Cloud -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-green-600 p-4">
+                        <h3 class="text-xl font-bold text-white flex items-center">
+                            <i class="fas fa-cloud mr-3"></i>
+                            DevOps et Cloud
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                                <span class="font-semibold">Docker & Kubernetes</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                                <span>Terraform & Ansible (IaC)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                                <span>Jenkins CI/CD</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                                <span>Monitoring (Datadog, ELK Stack)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                                <span>AWS (EC2, S3, Lambda, etc.)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                                <span>Git & SonarQube</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Spring Development -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-purple-600 p-4">
+                        <h3 class="text-xl font-bold text-white flex items-center">
+                            <i class="fas fa-code mr-3"></i>
+                            Développement Spring
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                                <span>Spring Boot - APIs REST</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                                <span>Spring Data JPA & Hibernate</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                                <span>Apache Kafka</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                                <span>Spring Cloud OpenFeign</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                                <span>MySQL, PostgreSQL, MongoDB</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                                <span>Keyclock</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                                <span>Postman</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- Développement avec Spring -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="p-3 border rounded">
-                    <h2 class="section-title">Compétences Développement avec Spring</h2>
-                    <ul>
-                        <li>Développement d'APIs REST avec Spring Boot</li>
-                        <li>Intégration avec Spring Data JPA et Hibernate</li>
-                        <li>Services asynchrones avec Kafka</li>
-                        <li>Utilisation de Spring Cloud OpenFeign pour les microservices</li>
-                        <li>Gestion de bases de données (MySQL, PostgreSQL,MongoDB)</li>
-                    </ul>
+            <!-- Barre de progression des technologies -->
+            <div class="mt-16 bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">Expertise Technique</h3>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-semibold">Docker/Kubernetes</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-600 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-semibold">Spring Framework</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-purple-600 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-semibold">Power BI</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Pied de page -->
-    <footer>
-        Contactez-moi : 
-        <div class="social-icons">
-            <a href="https://github.com/tallahmad047" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="mailto:tallahmad047@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/el-hadji-ahmad-tall-7bbb70214/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/VOTRE_COMPTE_TWITTER" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/VOTRE_COMPTE_INSTAGRAM" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
-
-    <!-- Lien vers le JavaScript de Bootstrap et jQuery pour les fonctionnalités interactives -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </section>
 </body>
 </html>
